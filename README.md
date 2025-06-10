@@ -1,1 +1,1 @@
-# HTK-GameJam2025_Team6
+# htkGameJam-Team6
