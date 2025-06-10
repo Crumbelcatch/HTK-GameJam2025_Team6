@@ -1,0 +1,79 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.U2D.IK;
+
+
+public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
+{
+    #region Variables
+    private RectTransform _rTransform;
+    private CanvasGroup _canvasGroup;
+    private GameObject _lastDropContainer;
+    public Vector3 _lastDropPosition;
+
+    [SerializeField] private Canvas _canvasRef;
+
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource _source;
+    [SerializeField] private AudioClip _clip;
+    #endregion
+
+    private void Awake()
+    {
+        _rTransform = GetComponent<RectTransform>();
+        _canvasGroup = GetComponent<CanvasGroup>();
+        _lastDropContainer = null;
+        _lastDropPosition = _rTransform.anchoredPosition;
+
+    }
+    
+    // On Begin of Drag   
+    public void OnBeginDrag(PointerEventData eventData) 
+    {
+        _lastDropPosition = _rTransform.anchoredPosition;
+        _canvasGroup.alpha = 0.6f;
+        _canvasGroup.blocksRaycasts = false;
+        if (_lastDropContainer != null)
+        {
+            ClearDropContainer(_lastDropContainer);
+        }
+
+    }
+
+    // During Drag
+    public void OnDrag(PointerEventData eventData) 
+    { 
+        _rTransform.anchoredPosition += eventData.delta / _canvasRef.scaleFactor;
+    }
+
+    public void OnEndDrag(PointerEventData eventData) 
+    { 
+        _canvasGroup.alpha = 1f;
+        _canvasGroup.blocksRaycasts = true;
+    }
+
+    public void OnDrop(PointerEventData eventData) 
+    {
+        eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = eventData.pointerDrag.GetComponent<S_DragDrop>()._lastDropPosition;
+        return;
+    }
+
+    public void ClearDropContainer(GameObject container)
+    {
+        _lastDropContainer.GetComponent<S_DropContainer>().slotFull = false;
+        _lastDropContainer.GetComponent<S_DropContainer>().solved = false;
+        _lastDropContainer.GetComponent<S_DropContainer>().Solve();
+        _lastDropContainer = null;
+
+    }
+
+    public void DropRefrence(GameObject dropContainer) 
+    {
+        _lastDropContainer = dropContainer;
+        _lastDropContainer.GetComponent<S_DropContainer>().slotFull = true;
+    }
+
+
+}
