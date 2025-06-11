@@ -29,6 +29,12 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
 
     }
     
+
+    public void OnClick(PointerEventData eventData)
+    {
+        _source.PlayOneShot(_clip); 
+    }
+
     // On Begin of Drag   
     public void OnBeginDrag(PointerEventData eventData) 
     {

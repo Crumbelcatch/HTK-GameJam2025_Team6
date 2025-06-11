@@ -22,7 +22,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-        rowManager = FindObjectOfType<ItemRowManager>();
+        rowManager = FindFirstObjectByType<ItemRowManager>();
 
         if (dragLayer == null)
         {
