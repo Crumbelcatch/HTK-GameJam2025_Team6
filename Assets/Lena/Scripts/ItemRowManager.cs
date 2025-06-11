@@ -63,6 +63,7 @@ public class ItemRowManager : MonoBehaviour
             items[i].originalParent = slots[i];
             StartCoroutine(AnimateItemToSlot(items[i], slots[i]));
         }
+        Debug.Log(IsCorrectlyOrdered());
     }
 
     private int FindClosestSlotIndex(Vector3 position)

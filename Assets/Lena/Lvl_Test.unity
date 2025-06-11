@@ -155,7 +155,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 236, y: 624.54}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &12956467
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 236, y: 624.54}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &229332557
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -322,10 +322,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1127862363}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.029762713, y: 0.019797646}
-  m_AnchorMax: {x: 0.57628816, y: 0.9760001}
-  m_AnchoredPosition: {x: -0.07147217, y: -1.5}
-  m_SizeDelta: {x: 1.0001221, y: 3.1336365}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 129, y: 597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &522378302
 MonoBehaviour:
@@ -342,6 +342,7 @@ MonoBehaviour:
   itemID: blue
   originalParent: {fileID: 0}
   dragLayer: {fileID: 2027600591}
+  _canvasRef: {fileID: 1646098233}
 --- !u!114 &522378303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +406,7 @@ GameObject:
   - component: {fileID: 536855846}
   - component: {fileID: 536855845}
   - component: {fileID: 536855844}
+  - component: {fileID: 536855848}
   m_Layer: 5
   m_Name: Lilla
   m_TagString: Untagged
@@ -426,10 +428,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 968920309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.123, y: 0.019214142}
-  m_AnchorMax: {x: 0.87728816, y: 1}
-  m_AnchoredPosition: {x: 0.0000076293945, y: -6}
-  m_SizeDelta: {x: 4.500046, y: 0.059906006}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_SizeDelta: {x: 182.50005, y: 612.05994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &536855844
 CanvasGroup:
@@ -458,6 +460,7 @@ MonoBehaviour:
   itemID: lilla
   originalParent: {fileID: 0}
   dragLayer: {fileID: 2027600591}
+  _canvasRef: {fileID: 1646098233}
 --- !u!114 &536855846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +499,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536855842}
   m_CullTransparentMesh: 1
+--- !u!1818360608 &536855848
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536855842}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Weight: 1
+  m_TranslationAtRest: {x: 118.00006, y: 0, z: 0}
+  m_TranslationOffset: {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 0
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_Active: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 2037364903}
+    weight: 1
 --- !u!1 &542781684
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +555,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 236, y: 624.54}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &542781686
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -714,7 +737,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 236, y: 624.54}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &762093479
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -759,7 +782,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 236, y: 624.54}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &968920310
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -804,7 +827,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 236, y: 624.54}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1127862364
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -917,10 +940,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1640939219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.06352543, y: 0.013398822}
-  m_AnchorMax: {x: 0.58900005, y: 0.96900004}
-  m_AnchoredPosition: {x: 0.714386, y: -1.5}
-  m_SizeDelta: {x: 5.000122, y: 3.1336365}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 129.00012, y: 600.13367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1459284428
 MonoBehaviour:
@@ -937,6 +960,7 @@ MonoBehaviour:
   itemID: red
   originalParent: {fileID: 0}
   dragLayer: {fileID: 2027600591}
+  _canvasRef: {fileID: 1646098233}
 --- !u!114 &1459284429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1021,10 +1045,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 762093478}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.15271188, y: 0}
-  m_AnchorMax: {x: 0.7204746, y: 0.8954047}
-  m_AnchoredPosition: {x: 1.0718384, y: 21}
-  m_SizeDelta: {x: -4.999878, y: 41.133636}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_SizeDelta: {x: 129.00012, y: 600.13367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1564065300
 CanvasGroup:
@@ -1053,6 +1077,7 @@ MonoBehaviour:
   itemID: pink
   originalParent: {fileID: 0}
   dragLayer: {fileID: 2027600591}
+  _canvasRef: {fileID: 1646098233}
 --- !u!114 &1564065302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,10 +1150,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 12956466}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.089, y: 0.018196467}
-  m_AnchorMax: {x: 0.64000005, y: 0.97383904}
-  m_AnchoredPosition: {x: -1.3571167, y: -0.5}
-  m_SizeDelta: {x: 0.00012207031, y: 3.1336365}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 130.00012, y: 600.13367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1585449283
 CanvasGroup:
@@ -1157,6 +1182,7 @@ MonoBehaviour:
   itemID: darkgreen
   originalParent: {fileID: 0}
   dragLayer: {fileID: 2027600591}
+  _canvasRef: {fileID: 1646098233}
 --- !u!114 &1585449285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,7 +1257,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 236, y: 624.54}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1640939220
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1316,7 +1342,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1331,7 +1357,7 @@ Canvas:
   m_GameObject: {fileID: 1646098229}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 694805390}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1379,10 +1405,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 229332556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.088762715, y: 0.009601179}
-  m_AnchorMax: {x: 0.64400005, y: 0.96439886}
-  m_AnchoredPosition: {x: 1.5001221, y: 0}
-  m_SizeDelta: {x: -0.9998779, y: 3.1336365}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 130.00012, y: 599.13367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1809873103
 MonoBehaviour:
@@ -1399,6 +1425,7 @@ MonoBehaviour:
   itemID: yellow
   originalParent: {fileID: 0}
   dragLayer: {fileID: 2027600591}
+  _canvasRef: {fileID: 1646098233}
 --- !u!114 &1809873104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1483,10 +1510,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 542781685}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1482373, y: 0.012797644}
-  m_AnchorMax: {x: 0.69500005, y: 0.97200006}
-  m_AnchoredPosition: {x: -2.7140503, y: -2.5}
-  m_SizeDelta: {x: 1.0001221, y: 1.1336365}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
+  m_SizeDelta: {x: 130.00012, y: 600.13367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854835851
 MonoBehaviour:
@@ -1503,6 +1530,7 @@ MonoBehaviour:
   itemID: green
   originalParent: {fileID: 0}
   dragLayer: {fileID: 2027600591}
+  _canvasRef: {fileID: 1646098233}
 --- !u!114 &1854835852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1724,7 +1752,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: -101.5
+  m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0

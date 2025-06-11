@@ -16,6 +16,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private RectTransform rectTransform;
     private ItemRowManager rowManager;
     public Transform dragLayer;
+    public Canvas _canvasRef;
 
     private void Awake()
     {
@@ -44,7 +45,8 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.position = Input.mousePosition;
+        //Debug.Log(Input.mousePosition);
+        rectTransform.position = Input.mousePosition / _canvasRef.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)
