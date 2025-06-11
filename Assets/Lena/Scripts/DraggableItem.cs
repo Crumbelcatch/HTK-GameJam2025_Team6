@@ -33,16 +33,10 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void OnBeginDrag(PointerEventData eventData)
     {
         originalParent = transform.parent;
-        startWorldPosition = rectTransform.position;
-        startSizeDelta = rectTransform.sizeDelta;
-        startScale = rectTransform.localScale;
 
         if (dragLayer != null)
         {
-            rectTransform.SetParent(dragLayer, worldPositionStays: true);
-            rectTransform.position = startWorldPosition;
-            rectTransform.sizeDelta = startSizeDelta;
-            rectTransform.localScale = startScale;
+            rectTransform.SetParent(dragLayer, worldPositionStays: false);
         }
 
         canvasGroup.blocksRaycasts = false;
