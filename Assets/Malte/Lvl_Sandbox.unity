@@ -218,12 +218,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6389610344548831574, guid: 6d49db33d187deb41958206dd39dbe0e, type: 3}
+      propertyPath: stackTag
+      value: Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389610344548831574, guid: 6d49db33d187deb41958206dd39dbe0e, type: 3}
       propertyPath: _canvasRef
       value: 
       objectReference: {fileID: 1218174974}
     - target: {fileID: 7233233511213060606, guid: 6d49db33d187deb41958206dd39dbe0e, type: 3}
       propertyPath: m_Name
-      value: Dragable Item (2)
+      value: Dragable Item (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -983,6 +987,10 @@ PrefabInstance:
     - target: {fileID: 6389610344548831574, guid: 6d49db33d187deb41958206dd39dbe0e, type: 3}
       propertyPath: _source
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389610344548831574, guid: 6d49db33d187deb41958206dd39dbe0e, type: 3}
+      propertyPath: stackTag
+      value: Red
       objectReference: {fileID: 0}
     - target: {fileID: 6389610344548831574, guid: 6d49db33d187deb41958206dd39dbe0e, type: 3}
       propertyPath: _canvasRef

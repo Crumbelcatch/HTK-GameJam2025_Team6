@@ -6,10 +6,17 @@ public class S_DropContainer : MonoBehaviour, IDropHandler
 {
     private RectTransform _rectTransform;
     private GameObject _this;
+    private GameObject _lastObj;
     public bool slotFull;
     public bool solved;
+    public int itemCount;
 
+
+
+    [Header("Required to solve")]
     [SerializeField] private GameObject _correctItem;
+    [SerializeField] public int reqItemCount;
+
 
     private void Awake()
     {
@@ -23,6 +30,13 @@ public class S_DropContainer : MonoBehaviour, IDropHandler
     {
         if (slotFull) 
         {
+            if (_lastObj.GetComponent<S_DragDrop>().stackTag == eventData.pointerDrag.GetComponent<S_DragDrop>().stackTag)
+            {
+                //Slot in the box
+                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = _rectTransform.anchoredPosition;
+                itemCount++;
+                return;
+            }
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = eventData.pointerDrag.GetComponent<S_DragDrop>()._lastDropPosition;
             return;
         }
@@ -33,23 +47,33 @@ public class S_DropContainer : MonoBehaviour, IDropHandler
             //Debug.Log(eventData.pointerDrag.name + " Dropped");
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = _rectTransform.anchoredPosition;
 
+            _lastObj = eventData.pointerDrag;
+
             eventData.pointerDrag.GetComponent<S_DragDrop>().DropRefrence(_this);
 
-            if (eventData.pointerDrag == _correctItem)
-            {
-                solved = true;
-                Solve();
-            }
-            else
-            {
-                solved = false;
-                Solve();
-            }
+            Solve(_lastObj);
         }
     }
 
-    public void Solve() 
+    public void Solve(GameObject item) 
     {
-        GetComponentInParent<S_PuzzleManager>().SolvedCheck();
+
+        if (item == _correctItem && itemCount == reqItemCount)
+        {
+            solved = true;
+            GetComponentInParent<S_PuzzleManager>().SolvedCheck();
+        }
+        else
+        {
+            solved = false;
+            GetComponentInParent<S_PuzzleManager>().SolvedCheck();
+        }
+    }
+
+
+    //Call this if Item is dragged off of this spot
+    public void ThrowOutItem() 
+    {
+        // Set Item count -1, check if container is solved, if itemcount is 0 set slotFull to FALSE
     }
 }

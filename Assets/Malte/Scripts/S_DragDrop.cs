@@ -13,7 +13,9 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
     private GameObject _lastDropContainer;
     public Vector3 _lastDropPosition;
 
+    [Header("Refrences to Fill")]
     [SerializeField] private Canvas _canvasRef;
+    [SerializeField] public String stackTag;
 
     [Header("Audio Settings")]
     [SerializeField] private AudioSource _source;
@@ -68,11 +70,7 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
 
     public void ClearDropContainer(GameObject container)
     {
-        _lastDropContainer.GetComponent<S_DropContainer>().slotFull = false;
-        _lastDropContainer.GetComponent<S_DropContainer>().solved = false;
-        _lastDropContainer.GetComponent<S_DropContainer>().Solve();
         _lastDropContainer = null;
-
     }
 
     public void DropRefrence(GameObject dropContainer) 
