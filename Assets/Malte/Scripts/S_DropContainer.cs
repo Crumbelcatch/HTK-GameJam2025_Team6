@@ -46,10 +46,9 @@ public class S_DropContainer : MonoBehaviour, IDropHandler
         {
             //Debug.Log(eventData.pointerDrag.name + " Dropped");
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = _rectTransform.anchoredPosition;
-
             _lastObj = eventData.pointerDrag;
-
             eventData.pointerDrag.GetComponent<S_DragDrop>().DropRefrence(_this);
+            itemCount++;
 
             Solve(_lastObj);
         }
@@ -57,7 +56,7 @@ public class S_DropContainer : MonoBehaviour, IDropHandler
 
     public void Solve(GameObject item) 
     {
-
+        
         if (item == _correctItem && itemCount == reqItemCount)
         {
             solved = true;
@@ -75,5 +74,11 @@ public class S_DropContainer : MonoBehaviour, IDropHandler
     public void ThrowOutItem() 
     {
         // Set Item count -1, check if container is solved, if itemcount is 0 set slotFull to FALSE
+        itemCount--;
+        if (itemCount == 0)
+        {
+            slotFull= false;
+            return;
+        }
     }
 }

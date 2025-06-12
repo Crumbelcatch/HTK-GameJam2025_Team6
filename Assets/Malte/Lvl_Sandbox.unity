@@ -877,6 +877,10 @@ PrefabInstance:
       propertyPath: _correctItem
       value: 
       objectReference: {fileID: 1555046656}
+    - target: {fileID: 8916434418853605484, guid: 53bd79fc8f78ab049843e675af056d00, type: 3}
+      propertyPath: reqItemCount
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

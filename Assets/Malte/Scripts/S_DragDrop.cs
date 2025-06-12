@@ -45,7 +45,7 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
         _canvasGroup.blocksRaycasts = false;
         if (_lastDropContainer != null)
         {
-            ClearDropContainer(_lastDropContainer);
+            ClearDropContainer();
         }
 
     }
@@ -64,12 +64,22 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
 
     public void OnDrop(PointerEventData eventData) 
     {
+        if (stackTag != string.Empty && stackTag == eventData.pointerDrag.GetComponent<S_DragDrop>().stackTag)
+        {
+            if (_lastDropContainer != null)
+            {
+                _lastDropContainer.GetComponent<S_DropContainer>().OnDrop(eventData);
+                eventData.pointerDrag.GetComponent<S_DragDrop>().DropRefrence(_lastDropContainer);
+            }
+            return;
+        }
         eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = eventData.pointerDrag.GetComponent<S_DragDrop>()._lastDropPosition;
         return;
     }
 
-    public void ClearDropContainer(GameObject container)
+    public void ClearDropContainer()
     {
+        _lastDropContainer.GetComponent<S_DropContainer>().ThrowOutItem();
         _lastDropContainer = null;
     }
 
