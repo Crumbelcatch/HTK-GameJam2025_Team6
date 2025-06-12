@@ -1112,6 +1112,14 @@ PrefabInstance:
       value: Drop Container
       objectReference: {fileID: 0}
     - target: {fileID: 8916434418853605484, guid: 53bd79fc8f78ab049843e675af056d00, type: 3}
+      propertyPath: solved
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916434418853605484, guid: 53bd79fc8f78ab049843e675af056d00, type: 3}
+      propertyPath: slotFull
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916434418853605484, guid: 53bd79fc8f78ab049843e675af056d00, type: 3}
       propertyPath: _correctItem
       value: 
       objectReference: {fileID: 885790616}
