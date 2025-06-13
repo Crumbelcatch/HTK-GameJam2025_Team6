@@ -150,7 +150,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{2051168d-35e4-43da-b4f7-27898d893366}">
 		<property name="volume">
-			<value>-13</value>
+			<value>-17</value>
 		</property>
 		<property name="name">
 			<value>FlowerMusic</value>
@@ -258,7 +258,7 @@
 	</object>
 	<object class="AutomationPoint" id="{e74f579c-08d5-47bd-b390-725f0dead5ab}">
 		<property name="position">
-			<value>4</value>
+			<value>8</value>
 		</property>
 		<property name="value">
 			<value>1</value>

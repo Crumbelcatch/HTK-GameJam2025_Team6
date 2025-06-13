@@ -171,7 +171,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{d2d10e72-5758-451f-b9a2-8f88ebfe99ed}">
 		<property name="volume">
-			<value>-16.5</value>
+			<value>-24.5</value>
 		</property>
 		<property name="name">
 			<value>UnderwaterAtmo</value>
@@ -285,7 +285,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{7bba2565-7cc9-41ac-ac7a-c9ca3677e9fd}">
 		<property name="volume">
-			<value>-13</value>
+			<value>-27.5</value>
 		</property>
 		<property name="name">
 			<value>Whale</value>
@@ -305,10 +305,10 @@
 	</object>
 	<object class="LoopRegion" id="{933bc9ea-4729-4713-9f51-2da2e826cff6}">
 		<property name="position">
-			<value>2</value>
+			<value>4</value>
 		</property>
 		<property name="length">
-			<value>102</value>
+			<value>100.0000000000001</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{e1b79900-cf19-4f4c-aca5-e42902f8a81e}</destination>
@@ -322,6 +322,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{28d58350-ffe4-46d2-a274-86692b3c10fd}">
 		<relationship name="effects">
+			<destination>{d0d97839-e875-4dbc-a08f-c339d3490a72}</destination>
 			<destination>{3d07fd28-aca0-4d00-a35a-823cb8dd4902}</destination>
 		</relationship>
 	</object>
@@ -486,6 +487,11 @@
 			<destination>{75215843-664d-4cc5-8b85-bb11f498dc4a}</destination>
 		</relationship>
 	</object>
+	<object class="ThreeEQEffect" id="{d0d97839-e875-4dbc-a08f-c339d3490a72}">
+		<property name="lowGain">
+			<value>2.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{3d07fd28-aca0-4d00-a35a-823cb8dd4902}" />
 	<object class="AutomationPoint" id="{e603c9e1-463d-4e0b-bff4-27bbfd6f5b52}">
 		<property name="position">
@@ -500,7 +506,7 @@
 	</object>
 	<object class="AutomationPoint" id="{f441e01c-763e-48f5-83ef-8859a31231b7}">
 		<property name="position">
-			<value>1</value>
+			<value>4</value>
 		</property>
 		<property name="value">
 			<value>1</value>
