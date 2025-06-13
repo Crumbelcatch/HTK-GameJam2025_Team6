@@ -18,7 +18,6 @@ public class VolumeManager : MonoBehaviour
     private VCA masterVCA;
     private VCA musicVCA;
     private VCA sfxVCA;
-    private VCA atmoVCA;
 
     private void Awake()
     {
