@@ -1,5 +1,6 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S_PuzzleManager : MonoBehaviour
 {
@@ -25,9 +26,24 @@ public class S_PuzzleManager : MonoBehaviour
         {
             Debug.Log("Puzzle solved. Now leave.");
             //Puzzle Solved! Go next goes here ->
+            //Unlock next Level in Level Select
+            UnlockLevel();
+
+            //Load next Level
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             return;
         }
         
         puzzleCount = 0;
+    }
+
+    private void UnlockLevel()
+    {
+        if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
+        {
+            PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.GetInt("UnlockedIndex", PlayerPrefs.GetInt("UnlockedLevel") + 1);
+            PlayerPrefs.Save();
+        }
     }
 }
