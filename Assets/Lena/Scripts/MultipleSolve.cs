@@ -2,16 +2,17 @@ using UnityEngine;
 
 public class MultipleSolve : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
     [SerializeField] private MultipleDrop container1;
     [SerializeField] private MultipleDrop container2;
 
     public void SolvedCheck()
     {
-        if (container1.solved && container2.solved)
+        if (container1 != null && container2 != null)
         {
-            Debug.Log("Пазл решён! Уровень пройден.");
+            if (container1.solved && container2.solved)
+            {
+                Debug.Log("Solved");
+            }
         }
     }
 }

@@ -1,89 +1,43 @@
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class MultipleDrop : MonoBehaviour, IDropHandler
 {
-    private RectTransform _rectTransform;
-    private GameObject _this;
-    private GameObject _lastObj;
-    public bool slotFull;
-    public bool solved;
-    public int itemCount;
-
-
-
-    [Header("Required to solve")]
-    [SerializeField] private GameObject _correctItem;
-    [SerializeField] public int reqItemCount;
+    [Header("Settings")]
     public List<GameObject> correctItems = new List<GameObject>();
+    public int reqItemCount = 1;
+
     private List<GameObject> currentItems = new List<GameObject>();
+    public bool solved = false;
 
-    private void Awake()
-    {
-        _rectTransform = GetComponent<RectTransform>();
-        _this = this.gameObject;
-
-    }
-
-    //public void
     public void OnDrop(PointerEventData eventData)
     {
         GameObject droppedItem = eventData.pointerDrag;
 
-        if (droppedItem == null)
-        {
-            Debug.LogWarning("Dropped item is null");
-            return;
-        }
+        if (droppedItem == null) return;
 
-        S_DragDrop dragComponent = droppedItem.GetComponent<S_DragDrop>();
-        if (dragComponent == null)
-        {
-            Debug.LogWarning("Dropped item does not have S_DragDrop component");
-            return;
-        }
+        MultipleDrag dragComponent = droppedItem.GetComponent<MultipleDrag>();
+        if (dragComponent == null) return;
 
+        // ѕомещаем внутрь контейнера
         droppedItem.transform.SetParent(transform);
         droppedItem.GetComponent<RectTransform>().anchoredPosition =
             transform.InverseTransformPoint(eventData.position);
 
         currentItems.Add(droppedItem);
-        itemCount++;
+        dragComponent.SetDropReference(gameObject);
 
-        dragComponent.DropRefrence(gameObject);
         Solve();
     }
 
-    public void Solve(GameObject item)
-    {
-
-        if (item == _correctItem && itemCount == reqItemCount)
-        {
-            solved = true;
-            GetComponentInParent<S_PuzzleManager>().SolvedCheck();
-        }
-        else
-        {
-            solved = false;
-            GetComponentInParent<S_PuzzleManager>().SolvedCheck();
-        }
-    }
-
-
-    //Call this if Item is dragged off of this spot
     public void ThrowOutItem(GameObject item)
     {
-        itemCount--;
-        currentItems.Remove(item);
-
-        if (itemCount <= 0)
+        if (currentItems.Contains(item))
         {
-            slotFull = false;
+            currentItems.Remove(item);
+            Solve();
         }
-
-        Solve(); // пересчитать
     }
 
     public void Solve()
@@ -91,21 +45,20 @@ public class MultipleDrop : MonoBehaviour, IDropHandler
         if (currentItems.Count != reqItemCount)
         {
             solved = false;
-            GetComponentInParent<S_PuzzleManager>().SolvedCheck();
-            return;
         }
-
-        foreach (var item in currentItems)
+        else
         {
-            if (!correctItems.Contains(item))
+            solved = true;
+            foreach (var item in currentItems)
             {
-                solved = false;
-                GetComponentInParent<S_PuzzleManager>().SolvedCheck();
-                return;
+                if (!correctItems.Contains(item))
+                {
+                    solved = false;
+                    break;
+                }
             }
         }
 
-        solved = true;
-        GetComponentInParent<S_PuzzleManager>().SolvedCheck();
+        GetComponentInParent<MultipleSolve>()?.SolvedCheck();
     }
 }
