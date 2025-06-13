@@ -5,18 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Lvl_MainMenu.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
     path: Assets/Malte/Lvl_Sandbox.unity
     guid: 3222de2496b4dd24d9135f5f462a133d
   - enabled: 1
+    path: Assets/Scenes/Lvl_MainMenu.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
     path: Assets/Scenes/Lvl_Level 1.unity
     guid: 74af59043c5eac04e8128920f238b777
   - enabled: 1
-    path: Assets/Scenes/Lvl_Level 2.1.unity
-    guid: 08d23e1183524d54daaf9c3517f233e5
+    path: Assets/Scenes/Lvl_Level 2.unity
+    guid: 955d9eece17ad45478c81f5e910d31b0
   - enabled: 1
     path: Assets/Scenes/Lvl_Level 3.unity
     guid: 2c83a3e332ce9f443a0f1ec9e0119d66
@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lvl_Level 5.unity
     guid: fa83a151bebb5874698146f406966da7
+  - enabled: 1
+    path: Assets/Scenes/Lvl_Level 2.1.unity
+    guid: 08d23e1183524d54daaf9c3517f233e5
   - enabled: 1
     path: Assets/Scenes/Lvl_Credits.unity
     guid: b1ec5606e23dc6145a608cc706011635

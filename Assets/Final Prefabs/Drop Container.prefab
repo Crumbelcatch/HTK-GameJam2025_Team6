@@ -88,4 +88,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a364159f0e9aa114a8f091dea3ab72f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctItem: Icon
+  slotFull: 0
+  solved: 0
+  itemCount: 0
+  _correctItem: {fileID: 0}
+  reqItemCount: 0
+  _correct:
+    Guid:
+      Data1: 1364341376
+      Data2: 1239167950
+      Data3: 1991119551
+      Data4: 899951593
+    Path: event:/SFX/AnswerRight
+  _incorrect:
+    Guid:
+      Data1: -390264071
+      Data2: 1173351922
+      Data3: 344977309
+      Data4: -1898101924
+    Path: event:/SFX/AnswerWrong
