@@ -23,7 +23,7 @@ public class VolumeManager : MonoBehaviour
     private void Awake()
     {
         // Сохраняем объект между сценами
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     void Start()
