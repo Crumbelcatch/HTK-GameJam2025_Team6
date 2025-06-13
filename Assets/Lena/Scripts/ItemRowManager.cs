@@ -52,6 +52,7 @@ public class ItemRowManager : MonoBehaviour
         if (targetIndex == -1 || targetIndex == oldIndex)
         {
             StartCoroutine(AnimateItemToSlot(draggedItem, slots[oldIndex]));
+            ResizeContainers();
             return;
         }
 
@@ -63,6 +64,7 @@ public class ItemRowManager : MonoBehaviour
             items[i].originalParent = slots[i];
             StartCoroutine(AnimateItemToSlot(items[i], slots[i]));
         }
+        ResizeContainers();
         Debug.Log(IsCorrectlyOrdered());
     }
 
@@ -80,6 +82,14 @@ public class ItemRowManager : MonoBehaviour
             }
         }
         return closestIndex;
+    }
+
+    public void ResizeContainers()
+    {
+        for (int i = 0; i < slots.Count; i++)
+        {
+            slots[i].GetComponent<S_Flexi>().ResizeContainer();
+        }
     }
 
     private IEnumerator AnimateItemToSlot(DraggableItem item, Transform slot)
