@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 171dad97a6c662c4681e1b6fb0799328
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6751674642954485789
+    second: WhereItBelongs_Logo_0
+  - first:
+      213: 858615562967969024
+    second: WhereItBelongs_Logo_1
+  - first:
+      213: -4119792035144407455
+    second: WhereItBelongs_Logo_2
+  - first:
+      213: -6778371120435229560
+    second: WhereItBelongs_Logo_3
+  - first:
+      213: -5519920393236017623
+    second: WhereItBelongs_Logo_4
+  - first:
+      213: 6559658073976618435
+    second: WhereItBelongs_Logo_5
+  - first:
+      213: -1723278503155516640
+    second: WhereItBelongs_Logo_6
+  - first:
+      213: 5607600579147036620
+    second: WhereItBelongs_Logo_7
+  - first:
+      213: -3518022844066689453
+    second: WhereItBelongs_Logo_8
+  - first:
+      213: -7523862736613325442
+    second: WhereItBelongs_Logo_9
+  - first:
+      213: -913133670758277329
+    second: WhereItBelongs_Logo_10
+  - first:
+      213: 5491309826591145334
+    second: WhereItBelongs_Logo_11
+  - first:
+      213: 1846602911975831496
+    second: WhereItBelongs_Logo_12
+  - first:
+      213: -2825771866645495037
+    second: WhereItBelongs_Logo_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 483
+        width: 125
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10805cd054c2bd50800000000000000
+      internalID: 6751674642954485789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 481
+        width: 75
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00de35d2e4a6aeb00800000000000000
+      internalID: 858615562967969024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_2
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 555
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166ebbcb8fe83d6c0800000000000000
+      internalID: -4119792035144407455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_3
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 481
+        width: 67
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c01ba11636ee1a0800000000000000
+      internalID: -6778371120435229560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 481
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e8bbce5ad4563b0800000000000000
+      internalID: -5519920393236017623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_5
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 483
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd36638346980b50800000000000000
+      internalID: 6559658073976618435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_6
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 481
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b395ae45fa518e0800000000000000
+      internalID: -1723278503155516640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_7
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 0
+        width: 519
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc77552340332dd40800000000000000
+      internalID: 5607600579147036620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_8
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 481
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e02b3dcd87d2fc0800000000000000
+      internalID: -3518022844066689453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_9
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 376
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e754d5544bed59790800000000000000
+      internalID: -7523862736613325442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_10
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 374
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f1102b3c5e353f0800000000000000
+      internalID: -913133670758277329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_11
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 374
+        width: 39
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67db39d613d053c40800000000000000
+      internalID: 5491309826591145334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_12
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 374
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c77581909370a910800000000000000
+      internalID: 1846602911975831496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhereItBelongs_Logo_13
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 374
+        width: 73
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3038d487577d8c8d0800000000000000
+      internalID: -2825771866645495037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WhereItBelongs_Logo_0: 6751674642954485789
+      WhereItBelongs_Logo_1: 858615562967969024
+      WhereItBelongs_Logo_10: -913133670758277329
+      WhereItBelongs_Logo_11: 5491309826591145334
+      WhereItBelongs_Logo_12: 1846602911975831496
+      WhereItBelongs_Logo_13: -2825771866645495037
+      WhereItBelongs_Logo_2: -4119792035144407455
+      WhereItBelongs_Logo_3: -6778371120435229560
+      WhereItBelongs_Logo_4: -5519920393236017623
+      WhereItBelongs_Logo_5: 6559658073976618435
+      WhereItBelongs_Logo_6: -1723278503155516640
+      WhereItBelongs_Logo_7: 5607600579147036620
+      WhereItBelongs_Logo_8: -3518022844066689453
+      WhereItBelongs_Logo_9: -7523862736613325442
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
