@@ -524,10 +524,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
-  HasSourceProject: 0
-  HasPlatforms: 0
-  sourceProjectPath: 
-  sourceBankPath: Assets/FModBanks
+  HasSourceProject: 1
+  HasPlatforms: 1
+  sourceProjectPath: FModProject/GameJamTeam06.fspro
+  sourceBankPath: FModProject/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -549,12 +549,12 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks:
-  - Desktop/Master
+  - Master
   Banks:
-  - Desktop/Atmo
-  - Desktop/Music
-  - Desktop/SFX
-  - Desktop/UI
+  - Atmo
+  - Music
+  - SFX
+  - UI
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

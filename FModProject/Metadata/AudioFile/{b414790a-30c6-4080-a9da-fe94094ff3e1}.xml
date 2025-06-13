@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{b414790a-30c6-4080-a9da-fe94094ff3e1}">
+		<property name="assetPath">
+			<value>FishLevel/Atmo/ES_Foley Stage, Whale Sound High 02 - Epidemic Sound.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>17.02</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2cb9156d-b862-4db9-a35a-a07ef49d4ed0}</destination>
+		</relationship>
+	</object>
+</objects>

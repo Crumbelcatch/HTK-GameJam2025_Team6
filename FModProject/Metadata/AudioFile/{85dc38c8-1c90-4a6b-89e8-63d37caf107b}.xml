@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{85dc38c8-1c90-4a6b-89e8-63d37caf107b}">
+		<property name="assetPath">
+			<value>FlowerLevel/Music/A Green Embrace.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>189.10572916666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2cb9156d-b862-4db9-a35a-a07ef49d4ed0}</destination>
+		</relationship>
+	</object>
+</objects>

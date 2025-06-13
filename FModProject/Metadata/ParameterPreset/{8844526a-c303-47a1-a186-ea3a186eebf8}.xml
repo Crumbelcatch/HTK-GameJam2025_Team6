@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{8844526a-c303-47a1-a186-ea3a186eebf8}">
+		<property name="name">
+			<value>SwampLevelMusic</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7aafbf8f-1cae-4494-bb70-8c258d357ea8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0cafb362-8340-4d5f-90fd-e8ea4d3da897}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0cafb362-8340-4d5f-90fd-e8ea4d3da897}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

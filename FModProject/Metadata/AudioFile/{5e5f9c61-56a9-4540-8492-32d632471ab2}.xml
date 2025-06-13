@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{5e5f9c61-56a9-4540-8492-32d632471ab2}">
+		<property name="assetPath">
+			<value>AbandonedLevel/Atmo/ES_Abandoned Warehouse, Metal Pipe, Squeak, Squeal, Creak 01 (L_C_R) - Epidemic Sound.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>3</value>
+		</property>
+		<property name="length">
+			<value>78.688999999999993</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2cb9156d-b862-4db9-a35a-a07ef49d4ed0}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{37b4726f-1a52-4008-af19-586e6240dfdd}">
+		<property name="name">
+			<value>InsectMovement</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7aafbf8f-1cae-4494-bb70-8c258d357ea8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c342d575-36fc-4e1a-a20e-072c07656da4}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c342d575-36fc-4e1a-a20e-072c07656da4}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

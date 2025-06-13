@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{6fe0ae90-3c35-4ea5-bf32-56e85d7e74dc}">
+		<property name="name">
+			<value>InsectMusic</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7aafbf8f-1cae-4494-bb70-8c258d357ea8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{8013b25e-c6e6-4553-8218-4f4df45c43ef}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{8013b25e-c6e6-4553-8218-4f4df45c43ef}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

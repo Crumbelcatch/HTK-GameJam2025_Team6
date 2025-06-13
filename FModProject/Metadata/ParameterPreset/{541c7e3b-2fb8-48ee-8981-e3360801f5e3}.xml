@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{541c7e3b-2fb8-48ee-8981-e3360801f5e3}">
+		<property name="name">
+			<value>Whale</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7aafbf8f-1cae-4494-bb70-8c258d357ea8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{121f8ed8-d288-41cf-87f2-c3b3dda2d6c6}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{121f8ed8-d288-41cf-87f2-c3b3dda2d6c6}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

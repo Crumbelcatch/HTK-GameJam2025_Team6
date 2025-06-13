@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: bcdd61b02d77a5a4cabf4f0b271220e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3594429275259190135
+    second: Bugs03_0
+  - first:
+      213: 652530007720154550
+    second: Bugs03_1
+  - first:
+      213: -1224783087850738459
+    second: Bugs03_2
+  - first:
+      213: 2283402242764258283
+    second: Bugs03_3
+  - first:
+      213: 2675232308134522035
+    second: Bugs03_4
+  - first:
+      213: 7355874769627200691
+    second: Bugs03_5
+  - first:
+      213: 6679034296645260971
+    second: Bugs03_6
+  - first:
+      213: 2374815219246636280
+    second: Bugs03_7
+  - first:
+      213: 6825666643871255418
+    second: Bugs03_8
+  - first:
+      213: -5326421174258278616
+    second: Bugs03_9
+  - first:
+      213: -4456031752317094911
+    second: Bugs03_10
+  - first:
+      213: -2592458648132813324
+    second: Bugs03_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bugs03_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 940
+        width: 1497
+        height: 1310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98449e54e950e1ec0800000000000000
+      internalID: -3594429275259190135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_1
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 2031
+        width: 904
+        height: 641
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b55173b5904e0900800000000000000
+      internalID: 652530007720154550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_2
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 1349
+        width: 869
+        height: 1441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec20c15542b00fe0800000000000000
+      internalID: -1224783087850738459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_3
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 1860
+        width: 728
+        height: 782
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb3b47ed3640bf10800000000000000
+      internalID: 2283402242764258283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_4
+      rect:
+        serializedVersion: 2
+        x: 3190
+        y: 1830
+        width: 541
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bca10a3c95502520800000000000000
+      internalID: 2675232308134522035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_5
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 1208
+        height: 1059
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc33ef3121551660800000000000000
+      internalID: 7355874769627200691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_6
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 773
+        width: 1304
+        height: 607
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba611364e42b0bc50800000000000000
+      internalID: 6679034296645260971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_7
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 538
+        width: 420
+        height: 681
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc136e0cd905f020800000000000000
+      internalID: 2374815219246636280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_8
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 168
+        width: 1544
+        height: 1702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7bcd2f06a3a9be50800000000000000
+      internalID: 6825666643871255418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_9
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 66
+        width: 366
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f5730a920c416b0800000000000000
+      internalID: -5326421174258278616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_10
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 144
+        width: 360
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1043747fabef822c0800000000000000
+      internalID: -4456031752317094911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs03_11
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 49
+        width: 409
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd772f489cb50cd0800000000000000
+      internalID: -2592458648132813324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bugs03_0: -3594429275259190135
+      Bugs03_1: 652530007720154550
+      Bugs03_10: -4456031752317094911
+      Bugs03_11: -2592458648132813324
+      Bugs03_2: -1224783087850738459
+      Bugs03_3: 2283402242764258283
+      Bugs03_4: 2675232308134522035
+      Bugs03_5: 7355874769627200691
+      Bugs03_6: 6679034296645260971
+      Bugs03_7: 2374815219246636280
+      Bugs03_8: 6825666643871255418
+      Bugs03_9: -5326421174258278616
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{b8e1e628-36a8-411a-ba42-ebf4e0e8b334}">
+		<property name="name">
+			<value>AbandonedLevelMusic</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7aafbf8f-1cae-4494-bb70-8c258d357ea8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{8e35e49e-1f88-4b4d-a45b-bdc427d17509}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{8e35e49e-1f88-4b4d-a45b-bdc427d17509}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

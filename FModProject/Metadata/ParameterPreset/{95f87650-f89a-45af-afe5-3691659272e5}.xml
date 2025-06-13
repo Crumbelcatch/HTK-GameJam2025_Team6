@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{95f87650-f89a-45af-afe5-3691659272e5}">
+		<property name="name">
+			<value>CrystalLevelAtmo</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7aafbf8f-1cae-4494-bb70-8c258d357ea8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9be2a9be-6254-450f-8464-7a63fb36ee14}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9be2a9be-6254-450f-8464-7a63fb36ee14}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -1,5 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 47baced018fb3bc41904adc3279a3d2d
 PluginImporter:
   externalObjects: {}
@@ -20,13 +19,18 @@ PluginImporter:
       settings:
         CPU: x86_64
         DefaultValueInitialized: true
-        OS: Windows
+    Win:
+      enabled: 0
+      settings:
+        CPU: None
     Win64:
-      enabled: 1
-      settings: {}
+      enabled: 0
+      settings:
+        CPU: x86_64
+    WindowsStoreApps:
+      enabled: 0
+      settings:
+        CPU: x64
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-=======
-guid: 47baced018fb3bc41904adc3279a3d2d
->>>>>>> Stashed changes

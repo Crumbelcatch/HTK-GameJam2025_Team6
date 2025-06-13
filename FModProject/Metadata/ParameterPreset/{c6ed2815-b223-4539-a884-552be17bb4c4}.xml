@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{c6ed2815-b223-4539-a884-552be17bb4c4}">
+		<property name="name">
+			<value>AbandonedLevelAtmo</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7aafbf8f-1cae-4494-bb70-8c258d357ea8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{1449569a-898e-48e1-9309-90762bc1c47d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{1449569a-898e-48e1-9309-90762bc1c47d}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

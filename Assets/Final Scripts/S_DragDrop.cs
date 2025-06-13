@@ -34,12 +34,14 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
 
     public void OnClick(PointerEventData eventData)
     {
-        _source.PlayOneShot(_clip); 
+        _source.PlayOneShot(_clip);
+        Debug.Log("OnClick");
     }
 
     // On Begin of Drag   
     public void OnBeginDrag(PointerEventData eventData) 
     {
+        Debug.Log("OnBeginDrag");
         _lastDropPosition = _rTransform.anchoredPosition;
         _canvasGroup.alpha = 0.6f;
         _canvasGroup.blocksRaycasts = false;
@@ -57,7 +59,8 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
     }
 
     public void OnEndDrag(PointerEventData eventData) 
-    { 
+    {
+        Debug.Log("OnEndDrag");
         _canvasGroup.alpha = 1f;
         _canvasGroup.blocksRaycasts = true;
     }

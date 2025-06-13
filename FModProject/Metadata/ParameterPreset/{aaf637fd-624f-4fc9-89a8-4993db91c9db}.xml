@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{aaf637fd-624f-4fc9-89a8-4993db91c9db}">
+		<property name="name">
+			<value>FlowerAtmoWind</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7aafbf8f-1cae-4494-bb70-8c258d357ea8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{871e9e0e-7865-456c-9cfb-3e6a602779bc}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{871e9e0e-7865-456c-9cfb-3e6a602779bc}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
