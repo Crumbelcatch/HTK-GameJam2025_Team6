@@ -260,7 +260,8 @@ PrefabInstance:
       value: MainMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3424005777929843880, guid: 3695849fa2cbc424aaac0ab65b945499, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3695849fa2cbc424aaac0ab65b945499, type: 3}
@@ -2791,6 +2792,13 @@ MonoBehaviour:
   - {fileID: 2144023257}
   - {fileID: 831854865}
   - {fileID: 14353530}
+  _completedSound:
+    Guid:
+      Data1: 15516595
+      Data2: 1285040351
+      Data3: 1902941325
+      Data4: -391926124
+    Path: event:/SFX/ContinueNextLevel
 --- !u!1001 &1402728354
 PrefabInstance:
   m_ObjectHideFlags: 0
