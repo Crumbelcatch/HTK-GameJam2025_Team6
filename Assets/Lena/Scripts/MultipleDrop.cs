@@ -42,23 +42,27 @@ public class MultipleDrop : MonoBehaviour, IDropHandler
 
     public void Solve()
     {
+        // Количество должно точно совпадать
         if (currentItems.Count != reqItemCount)
         {
             solved = false;
+            GetComponentInParent<MultipleSolve>().SolvedCheck();
+            return;
         }
-        else
+
+        // Все текущие предметы должны быть в списке правильных
+        foreach (var item in currentItems)
         {
-            solved = true;
-            foreach (var item in currentItems)
+            if (!correctItems.Contains(item))
             {
-                if (!correctItems.Contains(item))
-                {
-                    solved = false;
-                    break;
-                }
+                solved = false;
+                GetComponentInParent<MultipleSolve>().SolvedCheck();
+                return;
             }
         }
 
-        GetComponentInParent<MultipleSolve>()?.SolvedCheck();
+        // Всё совпадает
+        solved = true;
+        GetComponentInParent<MultipleSolve>().SolvedCheck();
     }
 }

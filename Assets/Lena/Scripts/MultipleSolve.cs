@@ -1,18 +1,33 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MultipleSolve : MonoBehaviour
 {
-    [SerializeField] private MultipleDrop container1;
-    [SerializeField] private MultipleDrop container2;
+    [SerializeField] private MultipleDrop[] containers;
 
     public void SolvedCheck()
     {
-        if (container1 != null && container2 != null)
+        foreach (var container in containers)
         {
-            if (container1.solved && container2.solved)
+            if (!container.solved)
             {
-                Debug.Log("Solved");
+                Debug.Log("wrong.");
+                return;
             }
+        }
+
+        Debug.Log("Solved!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        UnlockLevel();
+    }
+
+    private void UnlockLevel()
+    {
+        if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
+        {
+            PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.GetInt("UnlockedIndex", PlayerPrefs.GetInt("UnlockedLevel") + 1);
+            PlayerPrefs.Save();
         }
     }
 }
