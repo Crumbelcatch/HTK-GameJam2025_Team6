@@ -103,12 +103,12 @@ TextureImporter:
       name: Glass_5_0
       rect:
         serializedVersion: 2
-        x: 617
-        y: 233
-        width: 389
-        height: 687
+        x: 621
+        y: 0
+        width: 426
+        height: 1440
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9f680607a36a9ca4dbd6d5451b0d871e
     internalID: 0
     vertices: []
     indices: 
