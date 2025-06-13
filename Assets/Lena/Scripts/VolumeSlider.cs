@@ -15,7 +15,7 @@ public class VolumeManager : MonoBehaviour
     private string masterPath = "vca:/Master";
     private string musicPath = "vca:/Music";
     private string sfxPath = "vca:/SFX";
-    private string amnbiencePath = "vca:/Amnbience";
+    private string amnbiencePath = "vca:/Ambience";
 
     private VCA masterVCA;
     private VCA musicVCA;

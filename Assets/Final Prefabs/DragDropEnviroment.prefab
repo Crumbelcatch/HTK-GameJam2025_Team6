@@ -270,3 +270,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   puzzleCount: 0
+  _completedSound:
+    Guid:
+      Data1: 15516595
+      Data2: 1285040351
+      Data3: 1902941325
+      Data4: -391926124
+    Path: event:/SFX/ContinueNextLevel

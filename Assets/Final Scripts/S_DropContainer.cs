@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -11,11 +12,13 @@ public class S_DropContainer : MonoBehaviour, IDropHandler
     public bool solved;
     public int itemCount;
 
-
-
     [Header("Required to solve")]
     [SerializeField] private GameObject _correctItem;
     [SerializeField] public int reqItemCount;
+
+    [Header("Audio Settings")]
+    [SerializeField] public FMODUnity.EventReference _correct;
+    [SerializeField] public FMODUnity.EventReference _incorrect;
 
 
     private void Awake()
@@ -59,11 +62,13 @@ public class S_DropContainer : MonoBehaviour, IDropHandler
         
         if (item == _correctItem && itemCount == reqItemCount)
         {
+            FMODUnity.RuntimeManager.PlayOneShot(_correct, transform.position);
             solved = true;
             GetComponentInParent<S_PuzzleManager>().SolvedCheck();
         }
         else
         {
+            FMODUnity.RuntimeManager.PlayOneShot(_incorrect, transform.position);
             solved = false;
             GetComponentInParent<S_PuzzleManager>().SolvedCheck();
         }

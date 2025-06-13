@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.U2D.IK;
 using FMOD;
+using JetBrains.Annotations;
 
 
 public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
@@ -19,8 +20,8 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
     [SerializeField] public String stackTag;
 
     [Header("Audio Settings")]
-    [SerializeField] private AudioSource _source;
-    [SerializeField] private AudioClip _clip;
+    [SerializeField] public FMODUnity.EventReference _pickup;
+    [SerializeField] public FMODUnity.EventReference _drop;
     #endregion
 
     private void Awake()
@@ -35,10 +36,7 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
 
     public void OnClick(PointerEventData eventData)
     {
-        _source.PlayOneShot(_clip);
-
-
-
+        return;
     }
 
     // On Begin of Drag   
@@ -46,6 +44,7 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
     {
 
         _lastDropPosition = _rTransform.anchoredPosition;
+        FMODUnity.RuntimeManager.PlayOneShot(_pickup, _lastDropPosition);
         _canvasGroup.alpha = 0.6f;
         _canvasGroup.blocksRaycasts = false;
         if (_lastDropContainer != null)
@@ -66,6 +65,7 @@ public class S_DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
 
         _canvasGroup.alpha = 1f;
         _canvasGroup.blocksRaycasts = true;
+        FMODUnity.RuntimeManager.PlayOneShot(_drop, transform.position);
     }
 
     public void OnDrop(PointerEventData eventData) 

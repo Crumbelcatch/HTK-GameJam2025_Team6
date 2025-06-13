@@ -92,8 +92,20 @@ MonoBehaviour:
   _lastDropPosition: {x: 0, y: 0, z: 0}
   _canvasRef: {fileID: 0}
   stackTag: 
-  _source: {fileID: 0}
-  _clip: {fileID: 0}
+  _pickup:
+    Guid:
+      Data1: 1544979493
+      Data2: 1319208494
+      Data3: -1156988998
+      Data4: -821941241
+    Path: event:/SFX/UniversalPickUp
+  _drop:
+    Guid:
+      Data1: -15723475
+      Data2: 1112703595
+      Data3: -1458584436
+      Data4: 1903352584
+    Path: event:/SFX/UniversalDrop
 --- !u!225 &8663332344502183048
 CanvasGroup:
   m_ObjectHideFlags: 0
