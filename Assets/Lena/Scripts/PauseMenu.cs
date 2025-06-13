@@ -83,6 +83,7 @@ public class PauseMenu : MonoBehaviour
         string levelName = "Lvl_Level " + levelId;
         SceneManager.LoadScene(levelName);
     }
+    
     void UnlockNewLevel()
     {
         if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
