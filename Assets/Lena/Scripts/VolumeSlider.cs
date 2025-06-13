@@ -9,20 +9,23 @@ public class VolumeManager : MonoBehaviour
     public Slider masterSlider;
     public Slider musicSlider;
     public Slider sfxSlider;
+    public Slider amnbienceSlider;
 
     [Header("VCA Paths")]
     private string masterPath = "vca:/Master";
     private string musicPath = "vca:/Music";
     private string sfxPath = "vca:/SFX";
+    private string amnbiencePath = "vca:/Amnbience";
 
     private VCA masterVCA;
     private VCA musicVCA;
     private VCA sfxVCA;
+    private VCA amnbienceVCA;
 
     private void Awake()
     {
         // Сохраняем объект между сценами
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
@@ -31,19 +34,19 @@ public class VolumeManager : MonoBehaviour
         masterVCA = RuntimeManager.GetVCA(masterPath);
         musicVCA = RuntimeManager.GetVCA(musicPath);
         sfxVCA = RuntimeManager.GetVCA(sfxPath);
-
+        amnbienceVCA = RuntimeManager.GetVCA(amnbiencePath);
 
         // Загружаем сохранённые значения (если есть)
         float masterVol = PlayerPrefs.GetFloat("MasterVolume", 1f);
         float musicVol = PlayerPrefs.GetFloat("MusicVolume", 1f);
         float sfxVol = PlayerPrefs.GetFloat("SFXVolume", 1f);
-
+        float atmoVol = PlayerPrefs.GetFloat("AtmoVolume", 1f);
 
         // Применяем значения к слайдерам и VCA
         ApplyVolume(masterSlider, masterVCA, masterVol, "MasterVolume");
         ApplyVolume(musicSlider, musicVCA, musicVol, "MusicVolume");
         ApplyVolume(sfxSlider, sfxVCA, sfxVol, "SFXVolume");
-
+        ApplyVolume(amnbienceSlider, amnbienceVCA, atmoVol, "AtmoVolume");
     }
 
     private void ApplyVolume(Slider slider, VCA vca, float volume, string key)
