@@ -551,7 +551,6 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Atmo
   - Music
   - SFX
   - UI
