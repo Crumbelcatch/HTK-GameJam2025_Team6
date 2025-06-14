@@ -66,16 +66,16 @@ public class PauseMenu : MonoBehaviour
 
     private void Awake()
     {
-        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        //int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel");
         for (int i = 0; i < buttons.Length; i++)
-        {
-            buttons[i].interactable = false;
-        }
-
-        for (int i = 0; i < unlockedLevel; i++)
         {
             buttons[i].interactable = true;
         }
+
+        //for (int i = 0; i < unlockedLevel; i++)
+        //{
+        //    buttons[i].interactable = true;
+        //}
     }
 
     public void OpenLevel(int levelId)
@@ -89,7 +89,7 @@ public class PauseMenu : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
         {
             PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
-            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
+            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel") + 1);
             PlayerPrefs.Save();
         }
     }

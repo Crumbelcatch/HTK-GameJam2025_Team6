@@ -13,16 +13,21 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
-        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        //if (PlayerPrefs.GetInt("UnlockedLevel") >= 0)
+        //{
+        //    Debug.Log(PlayerPrefs.GetInt("UnlockedLevel"));
+        //}
+        //Debug.Log(PlayerPrefs.GetInt("UnlockedLevel"));
+        //int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel");
         for (int i = 0; i < buttons.Length; i++)
-        {
-            buttons[i].interactable = false;
-        }
-
-        for(int i = 0; i < unlockedLevel; i++)
         {
             buttons[i].interactable = true;
         }
+
+        //for(int i = 0; i < unlockedLevel; i++)
+        //{
+        //    buttons[i].interactable = true;
+        //}
     }
 
     public void Play()

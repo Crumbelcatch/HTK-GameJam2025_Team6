@@ -70,7 +70,7 @@ public class S_PuzzleManager : MonoBehaviour
         {
             //FMODUnity.RuntimeManager.PlayOneShot(_completedSound, transform.position);
             PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
-            PlayerPrefs.GetInt("UnlockedIndex", PlayerPrefs.GetInt("UnlockedLevel") + 1);
+            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel") + 1);
             PlayerPrefs.Save();
         }
     }
